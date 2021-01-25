@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/MainLayout"
+    android:orientation="horizontal"
+
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SecondLayout"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="#ffffffff">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/normal_list"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/HeaderLayout"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="نرم افزار کدهای USSD"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:textColor="#ff000000"
+                    android:id="@+id/TxvHeader"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/Layer1"
+            android:layout_weight="1"
+            android:background="#ffffffff"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="نسخه : 1.0"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:id="@+id/TxtVersion"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="برنامه نویس : علیرضا یعقوبی"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:id="@+id/Txt3"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="ایمیل :"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:id="@+id/Txt4"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="a.yaghoubi.samaco@gmail.com"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:id="@+id/Txt5"
+
+
+                android:textStyle="bold"
+                android:textSize="15dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/LayerRef"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:background="#ffffffff"
+            android:baselineAligned="false"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="منابع :"
+                android:textColor="@android:color/black"
+                android:id="@+id/Txt2"
+                android:layout_margin="10dp"
+                />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@android:color/black"
+
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+
+                />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/LstVwDetails"
+                android:background="#ffffffff"
+                android:divider="@null"
+                android:layout_gravity="top"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/black"
+                ></ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/FooterLayout"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/headerfooter"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

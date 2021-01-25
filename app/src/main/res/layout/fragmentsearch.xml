@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/MainLayout"
+    android:orientation="horizontal"
+
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SecondLayout"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:background="#ffffffff">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/Layer1"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#ffffffff"
+            android:baselineAligned="false"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/TxtSearch"
+                android:textSize="15sp"
+                android:background="@drawable/bodycolor"
+                android:textColor="@android:color/black"
+                android:hint="عبارت جستجو را وارد کنید"
+                android:textColorHint="@android:color/tertiary_text_dark"
+                android:gravity="center"
+                android:autoText="false"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@android:drawable/ic_menu_search"
+
+                />
+
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/LstVwDetails"
+                android:background="#ffffffff"
+                android:divider="@null"
+                android:layout_gravity="top"
+                android:layout_marginTop="2dp"
+                ></ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/FooterLayout"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/headerfooter"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

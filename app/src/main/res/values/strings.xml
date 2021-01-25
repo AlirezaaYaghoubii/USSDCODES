@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">کدهای USSD</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">...</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_final_show">FinalShow</string>
+    <string name="title_activity_about_me">AboutMe</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_group_details">GroupDetails</string>
+    <string name="title_activity_interface_page">InterfacePage</string>
+
+    <string-array name="dokmeha">
+        <item>تنظیمات</item>
+        <item>درباره ما</item>
+        <item>خروج</item>
+    </string-array>
+
+    <string name="drawer_open">منو باز</string>
+    <string name="drawer_close">منو بسته</string>
+
+
+</resources>

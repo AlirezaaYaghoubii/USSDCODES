@@ -1,0 +1,604 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/MainLayout"
+    android:orientation="horizontal"
+    android:background="#ffffffff">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SecondLayout"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:gravity="center"
+      >
+
+
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Layer1"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:layout_gravity="top"
+                android:orientation="vertical"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/Layer002"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerMyFavorite"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/stars"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="کدهای مورد علاقه"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvMyFavorite"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerSearch"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/search"
+                            android:id="@+id/ImgBankCard"
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="جستجو"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvSearch"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/Layer003"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerMCI"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/mcipng"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="همراه اول"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvMCI"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerPrivateCode"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/privateusers"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="کدهای شخصی"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvPrivateCode"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/Layer004"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerRitel"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/rightelpng"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="رایتل"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvRitel"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerIranCell"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/irancell"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="ایرانسل"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvIranCell"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/Layer001"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerBimeh"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/umbrella"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="بیمه ها"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvBimeh"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerOrganization"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/organpng"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="سازمان ها"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvOrgan"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/Layer0110199"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerCompany"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/mycompany"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="شرکت ها"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvCompany"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerBank"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/bankpbg"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="بانک ها"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvBank"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/Layer01101"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+
+
+                    android:padding="10dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerInsertComment"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/commenticon"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="ثبت نظر"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvComment"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerAction"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/kharid"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="عملیات"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvAction"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/Layer01101777"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+
+
+                    android:padding="10dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerAboutMe"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/androidpic"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="در مورد برنامه"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvAboutMe"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerAppList"
+                        android:orientation="vertical"
+                        android:background="@drawable/layoutbgnew"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@mipmap/market"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="سایر برنامه ها"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvApplist"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/FooterLayout"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/headerfooter"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

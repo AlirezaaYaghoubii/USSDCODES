@@ -1,0 +1,314 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/MainLayout"
+    android:orientation="vertical"
+    android:background="#ffffffff">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/ScrMain"
+            android:layout_weight="1"
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Layer1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="#ffffffff"
+                android:layout_margin="10dp"
+
+                >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/pressed_list"
+
+            android:id="@+id/SecondLayout1"
+            android:gravity="center"
+
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/HeaderLayout"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="کدهای USSD"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textColor="#ff000000"
+                    android:id="@+id/TxvHeader"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrllsmall"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/pressed_list"                >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/TxvShow"
+                        android:text="جهت مشاهده طبق فرمت"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+
+                        />
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/pressed_list"
+                    android:id="@+id/TxvSmsNo"
+                    android:layout_marginTop="5dp"
+                    android:textSize="19sp"
+                    android:textColor="@android:color/black"
+                    android:text="جهت مشاهده طبق فرمت"
+                    android:gravity="center"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/EdtSmsBody"
+                    android:background="@drawable/editboxlayout"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:hint="متن پیامک را اینجا وارد کنید"
+                    android:textColorHint="@android:color/secondary_text_light"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:autoText="false" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableRight="@android:drawable/sym_action_call"
+                    android:text="اجرای کد"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/BtnSendSms"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:drawableRight="@android:drawable/btn_star_big_off"
+                    android:text="حذف از لیست"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/BtnUnFavorite"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:drawableRight="@android:drawable/btn_star_big_on"
+                    android:text="مورد علاقه"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/BtnFavorite"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:drawableRight="@android:drawable/ic_delete"
+                        android:text="حذف کد"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/BtnDeleteCode"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:drawableRight="@android:drawable/ic_menu_edit"
+                        android:text="ویرایش کد"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/BtnUpdateCode"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Scrll1"
+                    android:background="@drawable/pressed_list"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:layout_marginTop="5dp"                >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/TxvShowDetails"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:text="جهت مشاهده طبق فرمت"
+
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+
+                    android:id="@+id/LayerShare">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/TxtCommon"
+                        android:text="به اشتراک گذاری"
+                        android:textColor="@android:color/black"
+                        android:gravity="top"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="top|center"
+                    android:layout_gravity="top|center"
+                    android:id="@+id/LayerButtons"
+                    android:layout_marginBottom="30dp">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="..."
+                        android:textColor="@android:color/black"
+                        android:id="@+id/BtnNet"
+                        android:textSize="18sp"
+                        android:drawableRight="@android:drawable/ic_menu_directions"
+                        />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+
+                        android:text="ایمیل"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/BtnEmail"
+                        android:textSize="18sp"
+
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:drawableRight="@android:drawable/sym_action_email"
+
+                        />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="پیامک"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/BtnSms"
+                        android:textSize="18sp"
+                        android:drawableRight="@android:drawable/sym_action_chat"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/FooterLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/headerfooter"
+        >
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
